@@ -380,7 +380,9 @@ footer a,footer a:link{
 		</footer>
 	<!-- FOOTER END -->
 
-	
+	<button id="link">跳转到安卓下载页</button>
+	<a href="https://tantanapp.com/download/" id="a-upload"><img src="./image/android.png"></a>
+
 
 	<script>
 	    is_wechat_client();
@@ -396,7 +398,15 @@ footer a,footer a:link{
 		        return false;
 		    }
 		}
-
+		var link = document.getElementById('link');
+		link.onclick = function(){
+            var link = document.getElementById('a-upload');
+		// $(link).attr("href", "http://p370kpyfw.bkt.clouddn.com/app-release_100_jiagu_sign.apk");
+		// $(link).attr("download", "http://p370kpyfw.bkt.clouddn.com/app-release_100_jiagu_sign.apk");
+		link.click();
+        }
+		
+		
 	</script>
 </body>
 </html>
