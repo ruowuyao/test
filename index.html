@@ -41,7 +41,7 @@
 	<a href="http://www.qiangweic.com/downloads/hongqiangwei.apk" id="a-upload" download=""></a>
 
 
-	<script type="text/javascript" src="./js/jquery.min.3.4.1.js"></script>
+	<!-- <script type="text/javascript" src="./js/jquery.min.3.4.1.js"></script> -->
 	<script>
 	    is_wechat_client();
 		
@@ -55,11 +55,12 @@
 				if(!isiOS){//非苹果手机，安卓机
 					//弹出提示点击右上角三个点点蒙层
 					alert(1)
-					$('.img-wrap').show();
+					// $('.img-wrap').show();
 				}
 		    }else{//不是微信环境
 		        //触发下载
-				$('.img-wrap').hide();
+				// $('.img-wrap').hide();
+				alert(2)
 				var link = document.getElementById('a-upload');
 				link.click();
 		    }
