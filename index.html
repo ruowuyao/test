@@ -381,21 +381,20 @@ footer a,footer a:link{
 	<!-- FOOTER END -->
 
 	<button id="link">跳转到安卓下载页</button>
-	<a href="https://tantanapp.com/download/" id="a-upload"><img src="./image/android.png"></a>
+	<a href="https://tantanapp.com/download/" id="a-upload" download="下载2"><img src="./image/android.png">132456</a>
 
 
 	<script>
 	    is_wechat_client();
 		
-		//在微信环境下，安卓端点击APP链接地址跳转至浏览器，苹果端跳转至 APP store
+		//在微信环境下，安卓端点击APP链接地址跳转至浏览器
 		function is_wechat_client(){
       	    var ua = navigator.userAgent.toLowerCase();
-	      	if(ua.match(/MicroMessenger/i)=="micromessenger"){
-				alert(1)
-		        return true;
-		    }else{
-				alert(2)
-		        return false;
+			//判断是否为微信环境
+	      	if(ua.match(/MicroMessenger/i)=="micromessenger"){//是微信环境
+				//二维码跳转地址为一个新页面，该新页面只做一个功能，就是打开下载页面
+		    }else{//不是微信环境
+		        //放正常的APP下载二维码
 		    }
 		}
 		var link = document.getElementById('link');
